@@ -48,4 +48,4 @@ type: adb install <<apk file path>>
 
 ## Tasks
 
-### Task 1
+### Task 1 To validate all the fields displayed and working as required
