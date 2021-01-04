@@ -50,10 +50,20 @@ exports.config = {
   //
   capabilities: [
     {
+      // platformName: "Android",
+      // "appium:platformVersion": "11.0",
+      // "appium:deviceName": "coti",
+      // "appium:appPackage": "com.amazon.mShop.android.shopping", //"com.amazon.mShop.android.shopping",
+      // "appium:appActivity": ".MainActivity", // "com.amazon.mShop.navigation.MainActivity" "com.amazon.mShop",
+      // // "appium:automationName": "UiAutomator2",
+
       platformName: "Android",
       platformVersion: "11.0",
       deviceName: "coti",
+      // appPackage: "com.amazon.mShop.android.shopping",
+      // appActivity: "com.amazon.mShop",
       app: join(process.cwd(), "./app/Amazon-Shopping.apk"),
+
       // // maxInstances can get overwritten per capability. So if you have an in-house Selenium
       // // grid with only 5 firefox instances available you can make sure that not more than
       // // 5 instances get started at a time.
