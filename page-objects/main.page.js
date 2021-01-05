@@ -1,35 +1,41 @@
+const {
+  searchBox,
+  cart,
+  voiceSearch,
+  homePage,
+  navigationPanel,
+  signInButton,
+  createAccount,
+} = require("../selectors/main.selectors");
+
 class Main {
   //
   get $searchBox() {
-    return $(
-      "//android.widget.EditText[@resource-id='com.amazon.mShop.android.shopping:id/rs_search_src_text'"
-    );
+    return $(searchBox);
   }
 
   get $cart() {
-    return $("~Cart");
+    return $(cart);
   }
 
   get $voiceSearch() {
-    return $("~Voice search, double tap and say what you want to search for");
+    return $(voiceSearch);
   }
 
   get $homePage() {
-    return $("~Home");
+    return $(homePage);
   }
 
   get $navigationPanel() {
-    return $(
-      "//android.widget.ImageView[@resource-id='com.amazon.mShop.android.shopping:id/chrome_action_bar_burger_icon'"
-    );
+    return $(navigationPanel);
   }
 
   get $signInButton() {
-    return $("//android.widget.Button[@text='Sign in']");
+    return $(signInButton);
   }
 
   get $createAccount() {
-    return $("//android.view.View[@text='Create an account']");
+    return $(createAccount);
   }
 }
 

@@ -1,38 +1,35 @@
+const {
+  wishList,
+  pastPurchases,
+  trackPurchases,
+  alreadyCustomerButton,
+  newToAmazonButton,
+  skipSigninButton,
+} = require("../selectors/home.selectors");
+
 class Home {
   get $wishList() {
-    return $(
-      "//android.widget.TextView[@resource-id='com.amazon.mShop.android.shopping:id/view_your_wish_list']"
-    );
+    return $(wishList);
   }
 
   get $pastPurchases() {
-    return $(
-      '//android.widget.TextView[@resource-id="com.amazon.mShop.android.shopping:id/Find_purchase"'
-    );
+    return $(pastPurchases);
   }
 
   get $trackPurchases() {
-    return $(
-      "android.widget.TextView[@resource-id='com.amazon.mShop.android.shopping:id/track_your_packages'"
-    );
+    return $(trackPurchases);
   }
 
   get $alreadyCustomerButton() {
-    return $(
-      "//android.widget.Button[@resource-id='com.amazon.mShop.android.shopping:id/sign_in_button']"
-    );
+    return $(alreadyCustomerButton);
   }
 
   get $newToAmazonButton() {
-    return $(
-      "//android.widget.Button[@resource-id='com.amazon.mShop.android.shopping:id/new_user']"
-    );
+    return $(newToAmazonButton);
   }
 
   get $skipSigninButton() {
-    return $(
-      "//android.widget.Button[@resource-id='com.amazon.mShop.android.shopping:id/skip_sign_in_button']"
-    );
+    return $(skipSigninButton);
   }
 
   clickSkipSignin() {
