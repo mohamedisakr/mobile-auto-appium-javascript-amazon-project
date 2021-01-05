@@ -1,11 +1,11 @@
-const {
+import {
   wishList,
   pastPurchases,
   trackPurchases,
   alreadyCustomerButton,
   newToAmazonButton,
   skipSigninButton,
-} = require("../selectors/home.selectors");
+} from "../selectors/home.selectors";
 
 class Home {
   get $wishList() {
@@ -36,4 +36,4 @@ class Home {
     this.$skipSigninButton.click();
   }
 }
-module.exports = new Home();
+export default new Home();

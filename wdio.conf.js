@@ -154,7 +154,7 @@ exports.config = {
   mochaOpts: {
     // Babel setup
     // comment babel setup
-    // require: ["@babel/register"],
+    require: ["@babel/register"],
     ui: "bdd",
     timeout: 60000,
   },

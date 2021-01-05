@@ -1,4 +1,4 @@
-const {
+import {
   searchBox,
   cart,
   voiceSearch,
@@ -6,7 +6,7 @@ const {
   navigationPanel,
   signInButton,
   createAccount,
-} = require("../selectors/main.selectors");
+} from "../selectors/main.selectors";
 
 class Main {
   //
@@ -39,4 +39,4 @@ class Main {
   }
 }
 
-module.exports = new Main();
+export default new Main();

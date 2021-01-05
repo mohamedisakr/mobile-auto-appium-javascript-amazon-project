@@ -1,4 +1,4 @@
-const home = require("../../page-objects/home.page");
+import home from "../../page-objects/home.page"; //= require("../../page-objects/home.page");
 //
 describe("home page", () => {
   // passed
